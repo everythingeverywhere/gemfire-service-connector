@@ -60,7 +60,7 @@ Open Powershell and run the script
 
 Then paste your Pivotal Network token like when prompted like the screenshot below.
 
-![Run .ps1 script and enter token](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image6.png "Run .ps1 script and enter token")
+<img src="https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image6.png" width="124" height="104">
 
 The script will download a zip with the package  .\GetGemFire.dll. To unzip in powershell the command is:
 
@@ -76,11 +76,11 @@ We will later paste  .\GetGemFire.dll into our published Steeltoe app
 
 Right click the GemFire4 directory in the Solution Explorer
 
-![GemFire4 directory](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image4.png "GemFire4 directory")
+<img src="https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image4.png" width="226.50" height="175.82">
 
 Select Publish from the context menu
 
-![Select Publish](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image3.png "Select Publish")
+<img src="https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image3.png" width="366" height="193.22">
 
 Make sure to publish to_ _the FolderProfile_ _and use this path as your Target Location_ _
 
@@ -92,7 +92,9 @@ bin/Debug/net461/win10-x64/publish
 
 Then, to publish your app click the Publish button like the screenshot that follows.
 
-![Push Publish button](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image9.png "Push Publish button")
+<img src="https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image9.png" width="463.47" height="255.50">
+
+
 
     _Note: Occasionally on some systems you may have to try the publish button more than once. For continued issues recheck the previous steps._
 
@@ -145,7 +147,7 @@ Now, we can cf push our app from within the GemFire4 folder in the Samples repo 
     _Note: If you have issues make sure the service name in the manifest.yml matches the name of the PCC instance you created._
 
 
-![cf Push](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image8.png "cf Push")
+<img src="https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image8.png" width="694" height="60">
 
 
 Save the route from your deployed app so that you can visit your app when we finish configuring the cache.
@@ -154,7 +156,7 @@ Save the route from your deployed app so that you can visit your app when we fin
 
 To get the GemFire Binaries go to [network.pivotal.io/products/pivotal-gemfire](http://network.pivotal.io/products/pivotal-gemfire). There you can download the **Pivotal GemFire Tar**. Don’t forget to sign in before downloading GemFire.
 
-![Pivotal GemFire Tar](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image2.png "Pivotal GemFire Tar")
+<img src="https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image2.png" width="377" height="318">
 
 When the download finishes unzip the tar. 
 
@@ -162,7 +164,7 @@ When the download finishes unzip the tar.
 
 In the command prompt, paste the path of the GemFire folder you extracted to initialize your gfsh instance. For me this was at C:\Users\ivan\Desktop\fork\pivotal-gemfire-9.8.3\bin\gfsh you can also add this to your bash script. 
 
-![Initialize the GemFire shell](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image10.png "Initialize the GemFire shell")
+<img src="https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image10.png" width="386" height="132">
 
 **Log in to the GemFire shell**
 
@@ -173,10 +175,10 @@ Create your SteelToeDemo Region with the type partition to begin to see the cach
 Cluster-0 gfsh> create region --name=SteeltoeDemo --type=PARTITION
 ```
 
-![Create Steeltoe region](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image5.png "Create Steeltoe region")
+<img src="https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image5.png" width="624" height="177">
 
 **Your new PCC Steeltoe application!**
 
 You can now go to the route created by Cloud Foundry and interact with your Pivotal Cloud Cache. There you will see the UI from your .NET app and you can interact with the cache of this basic application. From here you have seen how to customize your .NET Steeltoe app to have PCC capabilities. You can keep playing with this app to keep learning about PCC and Steeltoe
 
-![Fruity app screenshot](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image7.png "Fruity app screenshot")
+<img src="https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image7.png" width="624" height="325">
