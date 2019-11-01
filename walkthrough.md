@@ -1,20 +1,3 @@
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 10.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
 **Using the GemFire service connector**
 
 **to Run and deploy an example PCC .NET app using Steeltoe**
@@ -61,7 +44,7 @@ Import the solution to Visual Studio to create needed directories, located at
 ➜ \Samples\Connectors\src\AspDotNet4\Connectors.sln
 ```
 
-![Publish to Visual Studio](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image1.png "Publish to Visual Studio")
+![Publish to Visual Studio](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image1.png "Publish to Visual Studio" =624x318.67)
 
 
 **Download GemFire Native**
