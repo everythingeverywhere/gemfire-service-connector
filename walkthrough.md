@@ -44,7 +44,7 @@ Import the solution to Visual Studio to create needed directories, located at
 ➜ \Samples\Connectors\src\AspDotNet4\Connectors.sln
 ```
 
-![Publish to Visual Studio](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image1.png "Publish to Visual Studio" =624x318.67)
+![Publish to Visual Studio](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image1.png "Publish to Visual Studio" =624x318)
 
 
 **Download GemFire Native**
