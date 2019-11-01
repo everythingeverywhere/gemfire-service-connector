@@ -15,7 +15,7 @@
 <p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
 
 
-**Using the GemFire service connector **
+**Using the GemFire service connector**
 
 **to Run and deploy an example PCC .NET app using Steeltoe**
 
@@ -61,16 +61,10 @@ Import the solution to Visual Studio to create needed directories, located at
 ➜ \Samples\Connectors\src\AspDotNet4\Connectors.sln
 ```
 
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (./assets/image1.png). </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![Publish to Visual Studio](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image1.png "Publish to Visual Studio")
 
 
-**Download GemFire Native **
+**Download GemFire Native**
 
 Our Steeltoe application’s service connectors use the GemFire Native package to connect to our cache. We will use a script to obtain GemFire Native programmatically, but you may get it manually from the Pivotal Network [network.pivotal.io/products/pivotal-gemfire](http://network.pivotal.io/products/pivotal-gemfire). 
 
@@ -84,13 +78,7 @@ Open Powershell and run the script
 
 Then paste your Pivotal Network token like when prompted like the screenshot below.
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Using-the1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Using-the1.png "image_tooltip")
-
+![Run .ps1 script and enter token](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image2.png "Run .ps1 script and enter token")
 
 The script will download a zip with the package  .\GetGemFire.dll. To unzip in powershell the command is:
 
@@ -106,25 +94,11 @@ We will later paste  .\GetGemFire.dll into our published Steeltoe app
 
 Right click the GemFire4 directory in the Solution Explorer
 
-
-    
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Using-the2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Using-the2.png "image_tooltip")
-
+![GemFire4 directory](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image2.png "GemFire4 directory")
 
 Select Publish from the context menu
 
-
-    
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Using-the3.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Using-the3.png "image_tooltip")
-
+![Select Publish](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image3.png "Select Publish")
 
 Make sure to publish to_ _the FolderProfile_ _and use this path as your Target Location_ _
 
@@ -136,15 +110,7 @@ bin/Debug/net461/win10-x64/publish
 
 Then, to publish your app click the Publish button like the screenshot that follows.
 
-
-    
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Using-the4.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Using-the4.png "image_tooltip")
-
-
+![Push Publish button](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image3.png "Push Publish button")
 
     _Note: Occasionally on some systems you may have to try the publish button more than once. For continued issues recheck the previous steps._
 
@@ -156,7 +122,7 @@ Now move the GemFire package into directory .\src\AspDotNet4\GemFire4\bin
 ```
 
 
-**Connect your local GemFire to Pivotal Cloud Cache **
+**Connect your local GemFire to Pivotal Cloud Cache**
 
 Login to your apps manager from the PCF CLI or if you are using PWS the process is the same.
 
@@ -189,7 +155,7 @@ Let’s look at our key. Enter the following,
 
 ****Copy the first object called gfsh_login_string and save it in a text editor for later. You will use it to login to our PCC instance.**
 
-**Push your application to the cloud **
+**Push your application to the cloud**
 
 Now, we can cf push our app from within the GemFire4 folder in the Samples repo  \Samples\Connectors\src\AspDotNet4\Gemfire4. 
 
@@ -197,68 +163,38 @@ Now, we can cf push our app from within the GemFire4 folder in the Samples repo 
     _Note: If you have issues make sure the service name in the manifest.yml matches the name of the PCC instance you created._
 
 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Using-the5.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Using-the5.png "image_tooltip")
+![cf Push](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image4.png "cf Push")
 
 
 Save the route from your deployed app so that you can visit your app when we finish configuring the cache.
 
-**Download GemFire Binaries **
+**Download GemFire Binaries**
 
 To get the GemFire Binaries go to [network.pivotal.io/products/pivotal-gemfire](http://network.pivotal.io/products/pivotal-gemfire). There you can download the **Pivotal GemFire Tar**. Don’t forget to sign in before downloading GemFire.
 
-
-    
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Using-the6.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Using-the6.png "image_tooltip")
-
+![Pivotal GemFire Tar](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image5.png "Pivotal GemFire Tar")
 
 When the download finishes unzip the tar. 
 
-**Initialize the GemFire shell **
+**Initialize the GemFire shell**
 
 In the command prompt, paste the path of the GemFire folder you extracted to initialize your gfsh instance. For me this was at C:\Users\ivan\Desktop\fork\pivotal-gemfire-9.8.3\bin\gfsh you can also add this to your bash script. 
 
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Using-the7.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Using-the7.png "image_tooltip")
-
+![Initialize the GemFire shell](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image6.png "Initialize the GemFire shell")
 
 **Log in to the GemFire shell**
 
 Paste the “gfsh_login_string" you saved previously from the step above _Connect your local GemFire to Pivotal Cloud Cache_. The gfsh terminal will show _Cluster-0_ when you successfully log in.
 
-
+Create your SteelToeDemo Region with the type partition to begin to see the cache interacting with your app.
 ```
 Cluster-0 gfsh> create region --name=SteeltoeDemo --type=PARTITION
 ```
 
-
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Using-the8.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Using-the8.png "image_tooltip")
-
+![Create Steeltoe region](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image7.png "Create Steeltoe region")
 
 **Your new PCC Steeltoe application!**
 
 You can now go to the route created by Cloud Foundry and interact with your Pivotal Cloud Cache. There you will see the UI from your .NET app and you can interact with the cache of this basic application. From here you have seen how to customize your .NET Steeltoe app to have PCC capabilities. You can keep playing with this app to keep learning about PCC and Steeltoe
 
-
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Using-the9.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Using-the9.png "image_tooltip")
-
+![Fruity app screenshot](https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image8.png "Fruity app screenshot")
