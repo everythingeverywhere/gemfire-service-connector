@@ -60,7 +60,7 @@ Open Powershell and run the script
 
 Then paste your Pivotal Network token like when prompted like the screenshot below.
 
-<img src="https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image6.png" width="124" height="104">
+<img src="https://github.com/everythingeverywhere/gemfire-service-connector/blob/master/assets/images/image6.png" width="624" height="104">
 
 The script will download a zip with the package  .\GetGemFire.dll. To unzip in powershell the command is:
 
