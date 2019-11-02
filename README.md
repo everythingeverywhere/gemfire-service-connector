@@ -136,8 +136,7 @@ Let’s look at our key. Enter the following,
 ➜ cf service-key pcc-steeltoe pcc-steeltoe-service-key
 ```
 
-
-****Copy the first object called gfsh_login_string and save it in a text editor for later. You will use it to login to our PCC instance.**
+ Copy the first object called `gfsh_login_string` and save it in a text editor for later. You will use it to login to our PCC instance.**
 
 **Push your application to the cloud**
 
